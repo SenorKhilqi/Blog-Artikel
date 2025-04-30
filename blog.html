@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Kami - Artikel Terbaru dan Informasi</title>
+    
+    <!-- Bootstrap CSS -->      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Tema utama website -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+    <!-- CSS khusus untuk blog -->
+    <link rel="stylesheet" href="asset/css/blog.css">
+    
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Override untuk memastikan dark mode */
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        
+        .footer {
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="./asset/image/Logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#whatido">What I Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#testimony">Testimoni Client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#myskill">My Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#letsconnect">Let's Connect</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artikel.html">Artikel</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+            <h1>Blog Kami</h1>
+            <p>Temukan berbagai artikel informatif dan tips berguna seputar teknologi, pengembangan web, dan informasi terkini seputar dunia IT</p>
+    </header>
+
+    <main class="container blog-main">
+        <div class="row">
+            <!-- Kolom Utama (Artikel Terbaru) -->
+            <div class="col-lg-8 col-md-7 blog-content">
+                <h2 class="section-title">Artikel Terbaru</h2>
+                
+                <!-- Artikel 1 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="asset/img/blockchain.jpg" alt="Blockchain Technology">
+                    </div>
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title"><a href="artikel.html">Blockchain Technology: Transformasi Finansial di Era Digital</a></h3>
+                        <div class="blog-post-meta">
+                            <span><i class="far fa-calendar"></i> 28 April 2025</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                            <span><i class="far fa-folder"></i> Teknologi</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            Blockchain adalah teknologi yang mengubah cara kita melihat transaksi digital. Dengan keamanan yang tinggi dan transparansi, teknologi ini membawa revolusi dalam sistem keuangan digital modern.
+                        </p>
+                        <a href="artikel.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Artikel 2 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="asset/img/machine_learning.jpg" alt="Machine Learning">
+                    </div>
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title"><a href="artikel.html">Machine Learning: Bagaimana AI Mengubah Masa Depan?</a></h3>
+                        <div class="blog-post-meta">
+                            <span><i class="far fa-calendar"></i> 26 April 2025</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                            <span><i class="far fa-folder"></i> Artificial Intelligence</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            Machine Learning sedang mengubah cara sistem digital bekerja. Dengan kemampuan untuk belajar dari data, AI kini dapat memecahkan masalah kompleks dan bahkan memprediksi tren masa depan.
+                        </p>
+                        <a href="artikel.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Artikel 3 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="asset/img/cloud_computing.jpg" alt="Cloud Computing">
+                    </div>
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title"><a href="artikel.html">Cloud Computing: Revolusi Infrastruktur IT Modern</a></h3>
+                        <div class="blog-post-meta">
+                            <span><i class="far fa-calendar"></i> 24 April 2025</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                            <span><i class="far fa-folder"></i> Cloud Technology</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            Cloud computing telah mengubah cara bisnis mengelola infrastruktur IT mereka. Dengan fleksibilitas dan skalabilitas yang ditawarkan, perusahaan dapat mengoptimalkan biaya dan meningkatkan efisiensi.
+                        </p>
+                        <a href="artikel.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Artikel 4 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="asset/img/cybersec.jpg" alt="Cybersecurity">
+                    </div>
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title"><a href="artikel.html">Cybersecurity: Tantangan dan Solusi di Era Digital</a></h3>
+                        <div class="blog-post-meta">
+                            <span><i class="far fa-calendar"></i> 22 April 2025</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                            <span><i class="far fa-folder"></i> Keamanan</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            Di era digital ini, keamanan siber menjadi sangat krusial. Dengan meningkatnya serangan cyber, bisnis dan individu perlu lebih waspada dan menerapkan strategi keamanan yang komprehensif.
+                        </p>
+                        <a href="artikel.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Artikel 5 -->
+                <article class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="asset/img/IoT.png" alt="Internet of Things">
+                    </div>
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title"><a href="artikel.html">Internet of Things: Menghubungkan Dunia Digital dan Fisik</a></h3>
+                        <div class="blog-post-meta">
+                            <span><i class="far fa-calendar"></i> 20 April 2025</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                            <span><i class="far fa-folder"></i> IoT</span>
+                        </div>
+                        <p class="blog-post-excerpt">
+                            Internet of Things (IoT) membawa konektivitas ke level baru. Dengan menghubungkan perangkat sehari-hari ke internet, IoT menciptakan ekosistem pintar yang meningkatkan efisiensi dan kenyamanan.
+                        </p>
+                        <a href="artikel.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Pagination -->
+                <div class="blog-pagination">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Sidebar (Kategori & Artikel Populer) -->
+            <div class="col-lg-4 col-md-5 blog-sidebar">
+                <!-- Search Box -->
+                <div class="sidebar-section search-section">
+                    <form class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari artikel...">
+                            <div class="input-group-append">
+                                <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Kategori -->
+                <div class="sidebar-section category-section">
+                    <h3 class="sidebar-title">Kategori</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Teknologi <span>(12)</span></a></li>
+                        <li><a href="#">Pengembangan Web <span>(8)</span></a></li>
+                        <li><a href="#">Design UI/UX <span>(5)</span></a></li>
+                        <li><a href="#">Mobile App <span>(6)</span></a></li>
+                        <li><a href="#">Artificial Intelligence <span>(4)</span></a></li>
+                        <li><a href="#">Cloud Computing <span>(3)</span></a></li>
+                        <li><a href="#">Cybersecurity <span>(7)</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Artikel Populer -->
+                <div class="sidebar-section popular-section">
+                    <h3 class="sidebar-title">Artikel Populer</h3>
+                    <div class="popular-posts">
+                        <div class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="asset/img/framework.jpg" alt="Framework">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="artikel.html">5 Framework JavaScript Terbaik untuk 2025</a></h4>
+                                <span class="popular-post-date"><i class="far fa-calendar"></i> 15 April 2025</span>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="asset/img/AR-VR-In-Industries.jpg" alt="AR/VR">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="artikel.html">Masa Depan AR/VR dalam Industri Modern</a></h4>
+                                <span class="popular-post-date"><i class="far fa-calendar"></i> 10 April 2025</span>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="asset/img/depelopment.png" alt="Web Development">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="artikel.html">Tren Pengembangan Web untuk 2025-2026</a></h4>
+                                <span class="popular-post-date"><i class="far fa-calendar"></i> 5 April 2025</span>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="asset/img/IT.jpg" alt="IT Career">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="artikel.html">Karir di Bidang IT yang Menjanjikan</a></h4>
+                                <span class="popular-post-date"><i class="far fa-calendar"></i> 1 April 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tags -->
+                <div class="sidebar-section tags-section">
+                    <h3 class="sidebar-title">Tags</h3>
+                    <div class="tags-cloud">
+                        <a href="#" class="tag-link">Web</a>
+                        <a href="#" class="tag-link">Design</a>
+                        <a href="#" class="tag-link">JavaScript</a>
+                        <a href="#" class="tag-link">PHP</a>
+                        <a href="#" class="tag-link">Laravel</a>
+                        <a href="#" class="tag-link">CSS</a>
+                        <a href="#" class="tag-link">HTML</a>
+                        <a href="#" class="tag-link">React</a>
+                        <a href="#" class="tag-link">Vue</a>
+                        <a href="#" class="tag-link">Mobile</a>
+                        <a href="#" class="tag-link">API</a>
+                        <a href="#" class="tag-link">Tailwind</a>
+                    </div>
+                </div>
+                
+                <!-- Subscribe Newsletter -->
+                <div class="sidebar-section newsletter-section">
+                    <h3 class="sidebar-title">Berlangganan Newsletter</h3>
+                    <p>Dapatkan artikel terbaru langsung ke inbox Anda.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Anda">
+                        </div>
+                        <button type="submit" class="btn btn-subscribe">Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" id="letsconnect">
+        <h2 class="footer-title">Let's Connect</h2>
+        
+        <!-- Container untuk ikon sosial media -->
+        <div class="footer-icons">
+            <a href="https://wa.me/085776183609" target="_blank">
+                <img src="./asset/image/WA.png" alt="WhatsApp" class="footer-icon">
+            </a>
+            <a href="https://www.instagram.com/username" target="_blank">
+                <img src="./asset/image/IG.png" alt="Instagram" class="footer-icon">
+            </a>
+            <a href="https://github.com/username" target="_blank">
+                <img src="./asset/image/git.png" alt="GitHub" class="footer-icon">
+            </a>
+            <a href="https://discord.com/users/username" target="_blank">
+                <img src="./asset/image/Discord.png" alt="Discord" class="footer-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/username" target="_blank">
+                <img src="./asset/image/linked.png" alt="LinkedIn" class="footer-icon">
+            </a>
+            <a href="mailto:khiliq1alfadhillah@gmail.com">
+                <img src="./asset/image/E-mail.png" alt="Gmail" class="footer-icon">
+            </a>
+        </div>
+    
+        <!-- Informasi lainnya -->
+        <p>© 2025 Kilki. All Rights Reserved.</p>
+        <p>🔗 Navigasi: Beranda | Tentang Kami | Layanan | Kontak | FAQ</p>
+        <p>📞 Hubungi Kami: khiliq1alfadhillah@gmail.com | 085776183609</p>
+        <p>🌍 Ikuti Kami: Facebook | Instagram | LinkedIn</p>
+        <p>🔒 Kebijakan: Privasi | Syarat & Ketentuan</p>
+        <p>✨ Powered by Laravel | Dibuat dengan ❤️</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./asset/javascript/sidebar.js"></script>
+</body>
+</html>

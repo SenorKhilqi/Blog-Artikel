@@ -1,0 +1,607 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #272727; /* Mengubah latar belakang menjadi hitam */
+    color: white; /* Mengubah warna teks menjadi putih untuk kontras */
+}
+
+.container {
+    background-color: #FFFF; /* Opsional: Jika ingin menambah kontras pada konten */
+}
+header {
+    margin: 20px 120px 0 120px;
+}
+
+.nama {
+    font-size: 38px;
+}
+
+.keterangan {
+    font-size: 30px;
+    font-family: 'IBMPlexMono-Light', Helvetica, sans-serif;
+    margin-top: 20px;
+}
+/* Pastikan nama class di HTML sesuai dengan CSS */
+.biography-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Jarak antara gambar dan teks */
+    margin: 20px;
+}
+
+/* Gambar profil */
+.profile-img {
+    margin: 30px auto; /* Center the image horizontally */
+    width: 150px; /* Sesuaikan ukuran */
+    height: auto;
+}
+
+/* Judul Biography */
+.biography-title {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 100px;
+}
+
+/* Teks deskripsi */
+.biography-text {
+    font-size: 30px;
+    font-family: 'IBM Plex Mono', Helvetica, sans-serif;
+    max-width: 700px; /* Batasi lebar teks agar lebih rapi */
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+/* Style untuk section */
+.what-section {
+    padding: 20px;
+    max-width: auto;
+    margin: auto;
+}
+
+/* Layout utama: deskripsi + kotak layanan */
+.what-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-title{
+    margin-left: 100px;
+}
+
+/* Deskripsi utama */
+.what-description {
+    margin-left: 100px;
+    flex: 1; /* Memberikan lebih banyak ruang */
+    font-size: 30px;
+}
+
+/* Kotak layanan (berdampingan) */
+.what-boxes {
+    display: flex;
+    gap: 20px; /* Jarak antar kotak */
+    flex: 1; /* Membagi ruang secara merata */
+}
+
+/* Style masing-masing kotak */
+.what-box {
+    background: #323443; /* Warna abu-abu muda */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Ukuran kotak */
+    text-align: center;
+}
+
+.testi{
+    margin: 30px 0 30px 120px;
+}
+
+/* Style untuk section */
+.testimonial-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container untuk menata kotak testimonial */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Kotak testimonial */
+.testimonial-box {
+    background: #323443; /* Warna background abu-abu muda */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    position: relative; /* Diperlukan agar gambar bisa keluar dari kotak */
+    padding-top: 50px; /* Memberikan ruang untuk gambar */
+}
+
+/* Container untuk gambar (agar bisa keluar dari kotak) */
+.testimonial-img-container {
+    position: absolute;
+    top: -40px; /* Gambar keluar setengah dari kotak */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Gambar testimonial */
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #fff; /* Memberikan border putih agar lebih rapi */
+    background: white;
+}
+
+/* Kutipan */
+blockquote {
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Nama dan perusahaan */
+cite {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Style untuk section */
+.skill-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #272727; /* Warna background abu-abu muda */
+}
+
+/* Style untuk judul */
+.skill-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Flexbox untuk mengatur posisi gambar */
+.skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Jarak antara gambar utama dan skill list */
+}
+
+/* Gambar utama (myskill.png) */
+.skill-main {
+    width: 400px; /* Ukuran lebih besar */
+    height: auto;
+}
+
+/* Container untuk daftar skill */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Jarak antara baris */
+}
+
+/* Baris skill (3 gambar per baris) */
+.skill-row {
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* Jarak antar gambar */
+}
+
+/* Gambar skill lainnya */
+.skill-img {
+    width: 90px; /* Ukuran lebih kecil */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.skill-img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    header {
+        margin: 10px 20px 0 20px;
+    }
+    .nama {
+        font-size: 28px;
+    }
+    .keterangan {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .skill-container {
+        flex-direction: column;
+    }
+    .skill-main {
+        width: 140px; /* Sesuaikan ukuran gambar utama */
+    }
+}
+
+/* Style untuk section */
+.project-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #272727; /* Warna background abu-abu muda */
+}
+
+/* Style untuk judul */
+.project-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid layout untuk gambar */
+.project-grid {
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 gambar per baris */
+    gap: 20px; /* Jarak antar gambar */
+    justify-content: center;
+}
+
+/* Gambar project */
+.project-img {
+    width: 547px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Membuat sudut gambar lebih halus */
+}
+
+/* Efek hover */
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr); /* Semua gambar jadi 1 kolom di layar kecil */
+    }
+    .project-img {
+        width: 100%; /* Gambar menyesuaikan layar */
+    }
+}
+
+/* Style untuk footer */
+.footer {
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+    color: white;
+    text-align: center; /* Changed from left to center */
+}
+
+/* Style untuk judul */
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Container ikon sosial media */
+.footer-icons {
+    display: flex;
+    gap: 15px; /* Jarak antar ikon */
+    margin-bottom: 20px;
+    justify-content: center; /* Center the icons horizontally */
+}
+
+/* Gaya ikon sosial media */
+.footer-icon {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.footer-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Style untuk teks */
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .footer {
+        margin-left: 0; /* Hapus margin kiri di layar kecil */
+        text-align: center;
+    }
+    .footer-icons {
+        justify-content: center; /* Ikon di tengah */
+    }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .biography-section {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .profile-img {
+        margin: 10px auto; /* Center the image horizontally */
+        width: 100px;
+    }
+    .biography-title {
+        font-size: 24px;
+        margin-left: 0;
+    }
+    .biography-text {
+        font-size: 18px;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .what-section {
+        padding: 10px;
+    }
+    .what-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .what-description {
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .what-boxes {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .what-box {
+        width: 100%;
+    }
+    .testimonial-section {
+        padding: 20px;
+    }
+    .testimonial-box {
+        width: 100%;
+    }
+    .skill-section {
+        padding: 20px;
+    }
+    .skill-container {
+        flex-direction: column;
+    }
+    .skill-main {
+        width: 200px;
+    }
+    .skill-list {
+        gap: 20px;
+    }
+    .skill-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .project-section {
+        padding: 20px;
+    }
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    }
+    .project-img {
+        width: 100%;
+    }
+    .footer {
+        margin-left: 0;
+        text-align: center;
+    }
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none; /* Hidden by default, shown on mobile via JS */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background: transparent;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    height: 100vh;
+    width: 250px;
+    background-color: #343a40; /* Match Bootstrap's bg-dark */
+    z-index: 1001;
+    transition: right 0.3s ease;
+    padding: 60px 20px 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+
+.sidebar .nav-item {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    transition: color 0.15s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff !important;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.sidebar .close-btn:hover {
+    opacity: 1;
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Prevent scrolling when sidebar is open */
+body.sidebar-open {
+    overflow: hidden;
+}
+
+/* Contact Form Section Styling */
+.contact-section {
+    padding: 40px;
+    background-color: #272727;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #323443;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control {
+    background-color: #272727;
+    border: 1px solid #444;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #323443;
+    border-color: #6c757d;
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+}
+
+.error-message {
+    color: #ff6b6b;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.counter {
+    color: #aaa;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design for contact form */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        width: 90%;
+    }
+}
